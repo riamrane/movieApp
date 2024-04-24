@@ -1,0 +1,25 @@
+.pagination{
+    background-color: rgba(0, 0, 0, 0.915);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+ ul  {
+    list-style: none ;
+    cursor: pointer;
+    
+}
+ul .page-item{
+    padding: 10px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+}

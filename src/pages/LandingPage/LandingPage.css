@@ -1,0 +1,20 @@
+.movieContainer{
+    background-color:rgba(0, 0, 0, 0.915);
+    color: white;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+}
+img{
+    width:250px;
+    height: 350px;
+}
+h3, h5{
+    margin: 0;
+    padding: 5px;
+}
+.singleMovie{
+    margin-bottom: 70px;
+    cursor: pointer;
+}

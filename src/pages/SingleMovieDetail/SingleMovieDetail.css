@@ -1,0 +1,51 @@
+.singleMovieDetail{
+    background-color: #161616;
+    /* height: 100vh; */
+    color: white;
+}
+.movieDetail-container{
+    margin: 50px;
+    display: flex;
+    height: 550px;
+    border-radius: 10px;    
+}
+.image-backdrop{
+    width: 100%;
+}
+.image-backdrop img{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.movie-deets{
+    background-color:rgba(0, 0, 0, 0.915);
+    color: white
+}
+.col-1{
+    border-bottom-left-radius: 20px;
+}
+.col-1 .row .smallImg img, .col-1 .row .smallImg,.col-1{
+    border-top-left-radius: 20px;
+}
+.col-2, .col-2 img{
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+.castDetails{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.castDetails .singlecast img{
+    height: 300px;
+    width: 100%;
+
+}
+.castDetails .singlecast{
+    margin: 30px;
+}
+.castDetails h2, .castDetails h5{
+    margin: 0;
+}

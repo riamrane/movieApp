@@ -18,3 +18,27 @@ h3, h5{
     margin-bottom: 70px;
     cursor: pointer;
 }
+
+
+
+  @media (max-width: 1000px) {
+    .movieContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .movieContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movieContainer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    img {
+      height: 250px;
+    }
+  }
+  

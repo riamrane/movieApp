@@ -1,6 +1,5 @@
 .singleMovieDetail{
     background-color: #161616;
-    /* height: 100vh; */
     color: white;
 }
 .movieDetail-container{
@@ -49,3 +48,25 @@
 .castDetails h2, .castDetails h5{
     margin: 0;
 }
+
+
+@media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+      .col-1,
+      .col-2 {
+        margin-bottom: 20px; 
+      }
+    }
+  
+    .castDetails {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+    .movieDetail-container{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .casttop{
+        padding: 100px;
+    }
+  }

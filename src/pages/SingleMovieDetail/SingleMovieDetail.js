@@ -83,20 +83,22 @@ export default function SingleMovieDetail() {
         )}
       </div>
       
-      <h3>Cast Details</h3>
+     <div className='casttop'>
+     <h3>Cast Details</h3>
 
-      <div className='castDetails'>
-        {
-          castDetails?.map((cast,index) => (
-            <div className='singlecast' key={index}>
-              <img src={`https://image.tmdb.org/t/p/w500${cast.profile_path}`} alt={cast.original_name} />
-              <h2>{cast.original_name}</h2>
-              <h5>Charater:{cast.character}</h5>
-              {/* <h5>{cast}</h5> */}
-            </div>
-          ))
-        }
+<div className='castDetails'>
+  {
+    castDetails?.map((cast,index) => (
+      <div className='singlecast' key={index}>
+        <img src={`https://image.tmdb.org/t/p/w500${cast.profile_path}`} alt={cast.original_name} />
+        <h2>{cast.original_name}</h2>
+        <h5>Charater:{cast.character}</h5>
+        {/* <h5>{cast}</h5> */}
       </div>
+    ))
+  }
+</div>
+     </div>
 
     </div>
 
